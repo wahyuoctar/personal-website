@@ -1,14 +1,25 @@
 import "./App.css";
-import wahyu from "../src/public/wahyu.jpg";
+import wahyu from "../src/assets/wahyu.jpg";
 import { Box, Text } from "@chakra-ui/react";
 
 function App() {
   return (
     <div className="App">
       <div>
-        <img src={wahyu} />
-        <Box height="200px" backgroundColor="black">
-          <Text color="white">Aku Ini Wahyu</Text>
+        <Box
+          borderRadius="20px"
+          height="75vh"
+          width="75vw"
+          backgroundColor="#05386B"
+          display="flex"
+        >
+          <Box borderRadius="20px" padding={3}>
+            <img className="photo" src={wahyu} alt="me" />
+          </Box>
+          <Text color="white" fontWeight="bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+            ullam.
+          </Text>
         </Box>
       </div>
     </div>
